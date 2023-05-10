@@ -46,10 +46,10 @@ def add_data():
                                             'Digital input Pins':digitalIoPins,'DC Current per I/O Pin':dcCurrentPerIoPin,
                                             'Flash Memory':flashMemory,'SRAM':SRAM,'EEPROM':EEPROM,'Clock Speed':clockSpeed})
                                             #analogInputPins: 'analogInputPins'})
-    return jsonify({'Microcontroller':microcontroller
-                       ,'Operating Voltage':operatingVoltage,'Supply Voltage recommended': supplyVoltageRecommended,
-                       'Digital input Pins':digitalIoPins,'DC Current per I/O Pin':dcCurrentPerIoPin,
-                       'Flash Memory':flashMemory,'SRAM':SRAM,'EEPROM':EEPROM,'Clock Speed':clockSpeed,})
+    return jsonify({'microcontroller':microcontroller
+                       ,'operatingVoltage':operatingVoltage,'supplyVoltageRecommended': supplyVoltageRecommended,
+                       'digitalIoPins':digitalIoPins,'dcCurrentPerIoPin':dcCurrentPerIoPin,
+                       'flashMemory':flashMemory,'SRAM':SRAM,'EEPROM':EEPROM,'clockSpeed':clockSpeed,})
                        #'Analog Input Pins': str(analogInputPins)})
 
 @app.route('/arduinodata/<id>', methods=['PUT'])
